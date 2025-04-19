@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - DressCode Fashion Community</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="Fashion.js"></script>
+</head>
+<body>
+    <header>
+        <h1>DressCode</h1>
+        <p>Browse our collection of fashion inspiration</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="community.html">Community</a>
+        <a href="blog.html">Blog</a>
+        <a href="upload.html">Upload</a>
+        <a href="about.html">About</a>
+    </nav>
+    
+    <section class="filter-section">
+        <div class="filter-controls">
+            <h2>Filter Outfits</h2>
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="streetwear">Streetwear</option>
+                <option value="formal">Formal</option>
+                <option value="casual">Casual</option>
+                <option value="seasonal">Seasonal</option>
+            </select>
+            <select id="color-filter">
+                <option value="all">All Colors</option>
+                <option value="neutral">Neutral</option>
+                <option value="bright">Bright</option>
+                <option value="dark">Dark</option>
+            </select>
+            <button id="apply-filters">Apply Filters</button>
+        </div>
+    </section>
+    
+    <main class="gallery-container">
+        <article class="gallery-item">
+            <div class="gallery-select">
+                <input type="checkbox" id="outfit1">
+                <label for="outfit1">Select</label>
+            </div>
+            <img src="images/gallery1.jpg" alt="Streetwear outfit">
+            <div class="gallery-info">
+                <h3>Urban Edge</h3>
+                <p>Posted by @StyleSavant</p>
+                <div class="gallery-stats">
+                    <span>120 likes</span>
+                    <span>24 comments</span>
+                </div>
+            </div>
+        </article>
+        
+        <article class="gallery-item">
+            <div class="gallery-select">
+                <input type="checkbox" id="outfit2">
+                <label for="outfit2">Select</label>
+            </div>
+            <img src="images/gallery2.jpg" alt="Business casual outfit">
+            <div class="gallery-info">
+                <h3>Office Chic</h3>
+                <p>Posted by @CorporateCutie</p>
+                <div class="gallery-stats">
+                    <span>98 likes</span>
+                    <span>15 comments</span>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 DressCode Fashion Community. All rights reserved.</p>
+    </footer>
+</body>
+</html>

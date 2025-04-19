@@ -1,0 +1,75 @@
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #596235;
+    color: white;
+}
+
+/* Trending Section */
+.trending {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #CDCBD6;
+}
+.trending h2 {
+    color: #2F3020;
+    border-bottom: 2px solid #D96846;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Outfit Grid */
+.outfit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.outfit-card {
+    border: 1px solid #2F3020;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.outfit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(47, 48, 32, 0.2);
+}
+.outfit-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px 5px 0 0;
+}
+.outfit-card p {
+    padding: 10px;
+    margin: 0;
+    color: #2F3020;
+    font-weight: bold;
+}
+
+/* User Spotlight */
+.user-spotlight {
+    padding: 30px 20px;
+    background-color: #596235;
+    color: white;
+    text-align: center;
+}
+.user-spotlight h2 {
+    border-bottom: 2px solid #D96846;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.spotlight-content {
+    background-color: rgba(47, 48, 32, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}

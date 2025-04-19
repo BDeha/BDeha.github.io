@@ -1,0 +1,48 @@
+/* Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2F3020;
+    line-height: 1.6;
+    background-color: #CDCBD6;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2F3020;
+}
+h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+h2 { font-size: 1.8rem; margin: 1.5rem 0 1rem; }
+h3 { font-size: 1.4rem; }
+p { margin-bottom: 1rem; }
+
+/* Layout */
+section { padding: 40px 20px; }
+.section-sm { padding: 20px; }
+.container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Links */
+a:not(nav a) {
+    color: #D96846;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:not(nav a):hover { text-decoration: underline; }
+
+/* Buttons */
+button, .button {
+    background-color: #D96846;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button:hover, .button:hover { background-color: #c0553a; }
