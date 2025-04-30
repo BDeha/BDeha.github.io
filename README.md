@@ -1,8 +1,8 @@
-# Fashion Title - TBD - Fashion Inspiration Community
+# DressCode - Decode Your Style
 
 ## Overview
 
--FILLER NAME- is a vibrant, interactive platform where fashion enthusiasts can share and discover outfit inspiration through photographs. Our mission is to create a community that promotes self-expression and unites people through the common language of fashion.
+DressCode is a vibrant, interactive platform where fashion enthusiasts can share and discover outfit inspiration through photographs. Our mission is to create a community that promotes self-expression and unites people through the common language of fashion.
 
 ## Features
 
