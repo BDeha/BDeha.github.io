@@ -45,3 +45,7 @@ We welcome fashion enthusiasts to:
 4. Suggest new features
 
 Join us in building the ultimate fashion inspiration community!
+
+## Contributer
+Benny-Hardy L. Deha
+- Contact: b.l.deha@email.msmary.edu
