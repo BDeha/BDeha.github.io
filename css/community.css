@@ -1,0 +1,110 @@
+/* Community Container */
+.community-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Current Challenge */
+.current-challenge {
+    background: #596235;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.current-challenge h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.challenge-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.challenge-details img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.challenge-info {
+    flex: 1;
+}
+
+/* Polls */
+.community-polls {
+    background: #CDCBD6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.poll-card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.poll-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.poll-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Discussions */
+.user-discussions {
+    background: #CDCBD6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.discussion-card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.discussion-meta {
+    color: #596235;
+    font-size: 0.9rem;
+    margin: 5px 0 10px;
+}
+
+.join-discussion {
+    display: inline-block;
+    margin-top: 10px;
+    color: #D96846;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .challenge-details {
+        flex-direction: column;
+    }
+    
+    .challenge-details img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .community-container {
+        padding: 15px;
+    }
+}
