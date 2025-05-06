@@ -1,46 +1,27 @@
 // ======================
 // FIREBASE INITIALIZATION
 // ======================
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
-import { 
-  getAuth, 
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut,
-  updateProfile
-} from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
-import { 
-  getFirestore, 
-  collection, 
-  addDoc, 
-  query, 
-  where,
-  onSnapshot,
-  getDocs,
-  updateDoc,
-  doc
-} from "https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js";
-import { 
-  getStorage, 
-  ref, 
-  uploadBytes, 
-  getDownloadURL 
-} from "https://www.gstatic.com/firebasejs/9.6.0/firebase-storage.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBG2uIP7b_qCIFKHhP_h8mydghzuGb6UDw",
+  apiKey: "AIzaSyBG2uIP7b_qCiFKHhP_h8mydghzuGD6UDw",
   authDomain: "dresscode-6932f.firebaseapp.com",
   projectId: "dresscode-6932f",
-  storageBucket: "dresscode-6932f.appspot.com",
+  storageBucket: "dresscode-6932f.firebasestorage.app",
   messagingSenderId: "375713565567",
-  appId: "1:375713565567:web:b521bf1291dfb5542a684a"
+  appId: "1:375713565567:web:b521bf1291dfb5542a684a",
+  measurementId: "G-YRWVQN3QRW"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-const storage = getStorage(app);
+const analytics = getAnalytics(app);
 
 // ======================
 // CORE FUNCTIONALITY
