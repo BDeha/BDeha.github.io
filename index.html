@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DressCode - Fashion Inspiration Community</title>
-    <!-- Modular CSS -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/home.css">
@@ -18,13 +17,23 @@
     </header>
     
     <nav>
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="community.html">Community</a>
         <a href="blog.html">Blog</a>
         <a href="upload.html">Upload</a>
         <a href="about.html">About</a>
-    </nav>
+
+        <div class="account-dropdown">
+          <button id="account-button" class="account-button">Signup/Login</button>
+          <div class="dropdown-content" id="account-dropdown">
+            <a href="#" id="login-link">Login</a>
+            <a href="#" id="signup-link">Sign Up</a>
+            <a href="account.html" id="account-link" style="display:none;">My Account</a>
+            <a href="#" id="logout-link" style="display:none;">Logout</a>
+          </div>
+        </div>
+      </nav>
     
     <section class="hero">
         <h2>Discover Your Style</h2>

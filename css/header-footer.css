@@ -1,4 +1,4 @@
-/* Header */
+
 header {
     background-color: #596235;
     padding: 20px;
@@ -11,7 +11,6 @@ header p {
     font-style: italic;
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -32,7 +31,6 @@ nav a.active {
     font-weight: bold;
 }
 
-/* Footer */
 footer {
     background-color: #2F3020;
     color: white;
@@ -40,3 +38,51 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+
+.account-button {
+    background-color: #D96846;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  .account-button:hover {
+    background-color: #c0553a;
+  }
+  
+  .account-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(47, 48, 32, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content a {
+    color: #2F3020;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #CDCBD6;
+  }
+  
+  .account-dropdown:hover .dropdown-content {
+    display: block;
+  }

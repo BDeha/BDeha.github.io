@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - DressCode</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+    <header>
+        <h1>DressCode</h1>
+        <p>Your Fashion Profile</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="community.html">Community</a>
+        <a href="blog.html">Blog</a>
+        <a href="upload.html">Upload</a>
+        <a href="about.html">About</a>
+
+        <div class="account-dropdown">
+          <button id="account-button" class="account-button">Signup/Login</button>
+          <div class="dropdown-content" id="account-dropdown">
+            <a href="#" id="login-link">Login</a>
+            <a href="#" id="signup-link">Sign Up</a>
+            <a href="account.html" id="account-link" style="display:none;">My Account</a>
+            <a href="#" id="logout-link" style="display:none;">Logout</a>
+          </div>
+        </div>
+      </nav>
+    
+    <main class="account-container">
+        <h2>My Account</h2>
+        
+        <div class="account-info">
+            <div class="profile-pic">
+                <img id="user-photo" src="images/default-avatar.jpg" alt="Profile picture">
+                <input type="file" id="photo-upload" accept="image/*">
+            </div>
+            
+            <div class="user-details">
+                <h3 id="user-name">Loading...</h3>
+                <p id="user-email">Loading...</p>
+                
+                <div class="account-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="outfits-count">0</span>
+                        <span class="stat-label">Outfits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="likes-count">0</span>
+                        <span class="stat-label">Likes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="my-outfits">
+            <h3>My Uploads</h3>
+            <div class="outfits-grid" id="user-outfits">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 DressCode Fashion Community. All rights reserved.</p>
+    </footer>
+    
+    <script src="Fashion.js"></script>
+</body>
+</html>
